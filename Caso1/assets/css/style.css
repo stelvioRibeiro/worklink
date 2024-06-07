@@ -1,0 +1,146 @@
+:root{
+     --space: 30px;
+     --color-text-light: #8e8e8e;
+     --size-info: 8px;
+     --space-top: 15px;
+     --space-mim:10px;
+     --space-max: 30px;
+     --body-color:#f6f7f8;
+     --text-size:5px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    height: 100dvh;
+    background-color: var(--body-color);
+    display: grid;
+    place-content: center;
+}
+
+#principal{
+    height: 600px;
+    width: 1000px;
+    display: flex;
+}
+
+.section-card{
+    width: 24%;
+    height:90%;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+    
+    
+    
+   
+}
+
+#image1{
+   
+    width: 85%;
+    height: 50%;
+    margin:  auto;
+    margin-top: var(--space-top);
+    background-image: url('../images/statue-1200.jpg');
+    background-size: cover;
+    
+}
+
+.conteudo{
+    width: 85%;
+    height: 50%;
+    margin: auto;
+    margin-left: 22px;
+    margin-top: var(--space-max);
+}
+
+.info-image{
+    font-size: var(--size-info);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-mim);
+    
+    
+    
+}
+
+
+
+.info-image span{
+    margin-left: 15px;
+}
+
+
+
+.tituloContexto{
+    font-size: large;
+    margin-top: var(--space-mim);
+    height: 10%;
+
+}
+
+.contexto{
+    margin-top: var(--space-top);
+  
+}
+
+.more{
+    font-size: var(--size-info);
+    margin-top: var(--space-top);
+}
+
+#image2{
+    
+    width: 85%;
+    height: 35%;
+    margin:  auto;
+    margin-top: var(--space-top);
+    background-image: url('./images/beetle-1200.jpg');
+    background-size: cover;
+}
+
+#image3{
+    width: 85%;
+    height: 50%;
+    margin:  auto;
+    margin-top: var(--space-top);
+    background-image: url('../images/grayscale-600.jpg');
+    background-size: cover;
+}
+
+#image4{
+    width: 85%;
+    height: 50%;
+    margin:  auto;
+    margin-top: var(--space-top);
+    background-image: url('../images/woodcraft-600.jpg');
+    background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+   #principal{
+   flex-direction: column;
+   }
+
+    .conteudo{
+        font-size: var(--text-size);
+        width: 25%;
+        height: 35%;
+    }
+
+    .tituloContexto{
+        font-size: var(--text-size);
+    }
+
+
+    
+}
+
